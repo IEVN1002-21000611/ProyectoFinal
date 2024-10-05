@@ -1,0 +1,27 @@
+<form (ngSubmit)="procesarFormulario()" #ticketForm="ngForm">
+    <h2>Cinepolis Andres</h2>
+  
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" required><br><br>
+  
+    <label for="numCompra">Número de Compradores:</label>
+    <input type="number" id="numCompra" name="numCompra" [(ngModel)]="numCompra" required><br><br>
+  
+    <label for="Cineco">¿Tiene tarjeta CINECO?</label>
+    <select id="Cineco" name="Cineco" [(ngModel)]="cineco" required>
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select><br><br>
+  
+    <label for="numTickets">Cantidad de Boletos:</label>
+    <input type="number" id="numTickets" name="numTickets" [(ngModel)]="numTickets" required><br><br>
+  
+    <button type="submit">Procesar</button>
+  </form>
+  
+  <div *ngIf="totalBoletos !== null && precioFinal !== null">
+    <h2>Salida</h2>
+    <p>Total de boletos: {{ totalBoletos }}</p>
+    <p>Precio Final: ${{ precioFinal.toFixed(2) }}</p>
+  </div>
+  

@@ -7,13 +7,15 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductosFilterPipe } from './product/productos-filter.pipe';
 import { EjemploComponent } from './formularios/ejemplo/ejemplo.component';
+import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductosFilterPipe,
-    EjemploComponent
+    EjemploComponent,
+    CinepolisComponent
   ],
   imports: [
     BrowserModule,
