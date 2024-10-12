@@ -30,5 +30,6 @@ export class Ejemplo1Component implements OnInit{
   }
   onSubmit():void{
     console.log(this.formGroup.value)
+    /* ejemplo*/
   }
 }
