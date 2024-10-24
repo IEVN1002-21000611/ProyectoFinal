@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductosFilterPipe } from './product/productos-filter.pipe';
 import { EjemploComponent } from './formularios/ejemplo/ejemplo.component';
 import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
+import { ZodiacoComponent } from './formularios/zodiaco/zodiaco.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component'
     ProductListComponent,
     ProductosFilterPipe,
     EjemploComponent,
-    CinepolisComponent
+    CinepolisComponent,
+    ZodiacoComponent
   ],
   imports: [
     BrowserModule,
